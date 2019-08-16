@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Haru Cafe</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Open+Sans:400,400i,700&display=swap"
+        rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body id="contact-body">
+
+    <!-- Navbar -->
+    <nav class="desktop-nav">
+        <div class="nav-wrapper">
+
+            <div class="brand-wrapper">
+                <div class="navbar-brand">
+                    <a href="#"><img src="img/logo.png" alt=""></a>
+                    <i class="fas fa-bars toogle hide-desktop"></i>
+                </div>
+            </div>
+
+            <div class="nav-list show-desktop">
+                <ul>
+                    <li>
+                        <a href="index.html" class="active">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Gallery</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#" class="btn">Get Here</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+    <!-- Navbar ends -->
+
+    <section id="contact">
+        <h2>contact us</h2>
+        <div class="contact-wrapper">
+            <div class="information">
+                <h4>we <span>open</span> everyday at</h4>
+                <div class="schedule">
+                    <p>Saturday - Sunday : from 00:00 P.M until 03.00 A.M</p>
+                    <p>Monday - Friday : from 00:00 P.M until 11.00 P.M</p>
+                </div>
+                <div class="contact-info">
+                    <p><i class="fas fa-envelope"></i> Email : example@email.com </p>
+                    <p><i class="fas fa-phone"></i> Phone Number : 08532385023 </p>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form>
+                    <div class="form-input">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="enter your name">
+                    </div>
+                    <div class="form-input">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="enter your email">
+                    </div>
+                    <div class="form-input">
+                        <label for="message">Message</label>
+                        <textarea rows="4" id="message">
+                        </textarea>
+                    </div>
+                    <button type="submit" class="btn"><i class="fab fa-telegram-plane"></i> Send</button>
+
+                </form>
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <!-- footer -->
+    <footer>
+        <div class="footer-wrapper">
+            <img src="img/logo.png" alt="">
+            <p>copyright 2019. all right reserved</p>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        AOS.init();
+
+        $(document).ready(function () {
+
+            $(document).scroll(function () {
+                var $nav = $(".desktop-nav");
+                $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+            });
+        });
+    </script>
+
+</body>
+
+
+
+</html>
