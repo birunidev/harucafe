@@ -153,16 +153,23 @@ $desktop: 992px;
 }
 
 
+#wrapper {
+    overflow: hidden;
+    width: 100%;
+}
+
 // Global css
 html {
     box-sizing: border-box;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
     scroll-behavior: smooth;
 }
 
 body {
     font-family: 'open sans';
     color: #1F1300;
+    overflow-x: hidden;
+    width: 100%;
 }
 
 .scrolled {
@@ -190,6 +197,7 @@ body {
 }
 
 nav {
+
     position: fixed;
     width: 100%;
     z-index: 9999;
